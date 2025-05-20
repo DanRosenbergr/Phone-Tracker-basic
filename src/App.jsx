@@ -150,6 +150,7 @@ function App() {
       )
       .then((response) => {
         setBtsData(response.data);
+        console.log("Data v btsData:", btsData);
         setShowListBTS(false);
       })
       .catch((error) => {
@@ -184,6 +185,7 @@ function App() {
       .get("https://phone-tracker-backendtest.onrender.com/gpsdata")
       .then((response) => {
         setSavedRecordsGPS(response.data);
+        console.log("Data v savedRecordsGPS", savedRecordsGPS);
         setShowListGPS(true);
       })
       .catch((error) => {
@@ -199,6 +201,7 @@ function App() {
       )
       .then((response) => {
         setGpsData(response.data);
+        console.log("Data v GpsData:", gpsData);
         setShowListGPS(false);
       })
       .catch((error) => {
