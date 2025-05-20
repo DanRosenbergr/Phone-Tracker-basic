@@ -1,0 +1,104 @@
+body {
+  background-color: rgb(246, 246, 246);
+  color: rgb(54, 54, 54);
+  font-size: 14px;
+}
+.container {
+  max-width: 1600px;
+  margin: 0 auto;
+  margin: 10px;
+}
+.btn {
+  padding: 5px;
+  margin: 5px;
+  width: 150px;
+  font-size: 12px;
+}
+.btnSwitch {
+  height: 50px;
+  width: 240px;
+  font-size: 16px;
+}
+.btnDel {
+  width: 70px;
+}
+
+.mainWindow {
+  display: grid;
+  grid-template-columns: 350px 1fr 350px;
+  grid-template-rows: 90px 50px 1fr;
+  gap: 15px;
+  height: 650px;
+}
+.sourceSwitch {
+  grid-row: 1;
+  grid-column: 2;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid rgb(60, 60, 60);
+}
+.MapShow {
+  grid-row: 2 / span 2;
+  grid-column: 2;
+  border: 1px solid rgb(60, 60, 60);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.BTSupload {
+  grid-column: 1;
+  grid-row: 1;
+  display: flex;
+  align-items: center;
+  border: 1px solid rgb(60, 60, 60);
+}
+.BTSdataHandle {
+  grid-column: 1;
+  grid-row: 2;
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid rgb(60, 60, 60);
+}
+.BTSwindow {
+  grid-column: 1;
+  grid-row: 3;
+  border: 1px solid rgb(60, 60, 60);
+  overflow: auto;
+}
+.Records {
+  justify-content: space-between;
+}
+.GPSupload {
+  grid-column: 3;
+  grid-row: 1;
+  display: flex;
+  align-items: center;
+  border: 1px solid rgb(60, 60, 60);
+}
+.GPSdataHandle {
+  grid-column: 3;
+  grid-row: 2;
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid rgb(60, 60, 60);
+}
+.GPSwindow {
+  grid-column: 3;
+  grid-row: 3;
+  border: 1px solid rgb(60, 60, 60);
+  overflow: auto;
+}
+/* animace */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1s ease forwards;
+}
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
